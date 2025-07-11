@@ -1,6 +1,7 @@
 
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Home">
@@ -10,9 +11,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <div class="glider-contain">
     <button class="glider-prev">«</button>
     <div class="glider">
-      <div><img src="/images/carouselImages/img-1.jpg" alt="Slide 1" /></div>
-      <div><img src="/images/carouselImages/img-2.jpg" alt="Slide 2" /></div>
-      <div><img src="/images/carouselImages/img-3.jpg" alt="Slide 3" /></div>
+      <div><img src={`${base}images/carouselImages/img-1.jpg`} alt="Slide 1" /></div>
+      <div><img src={`${base}images/carouselImages/img-2.jpg`} alt="Slide 1" /></div>
+      <div><img src={`${base}images/carouselImages/img-3.jpg`} alt="Slide 1" /></div>
     </div>
     <button class="glider-next">»</button>
     <div class="dots"></div>
