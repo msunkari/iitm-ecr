@@ -11,9 +11,32 @@ body {
 
 main.container {
   flex: 1;
+  position: relative;
+  background: url('/iitm-ecr/images/ecr-logo.jpeg') no-repeat center center;
+  background-size: contain;
+  margin-bottom: 60px; /* prevent footer overlap */
 }
 
-h1, h2, h3, h4 {
+main.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* white tint overlay */
+  z-index: 0;
+}
+
+main.container > * {
+  position: relative;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
   color: #00509d;
 }
 
@@ -37,28 +60,44 @@ nav a.nav-link.active {
   width: 100%;
   border-radius: 8px;
 }
+
 .navbar-nav {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
 .text-center {
   text-align: center;
 }
-.index-pointer-title{
+
+.index-pointer-title {
   margin-bottom: 0;
   font-size: 18px;
   font-weight: 700;
 }
 
-.home-page-desc .desc-content{
+.home-page-desc .desc-content {
   flex: 1 1 auto;
-  width: 50%;
+  width: 70%;
 }
-.desc-content img {
+
+.desc-image {
+  flex: 1 1 auto;
+  width: 30%;
+}
+
+.desc-image img {
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   border-radius: 8px;
+}
+
+.page-header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
