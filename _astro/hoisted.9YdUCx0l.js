@@ -1,0 +1,1 @@
+import"https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js";import"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js";document.addEventListener("DOMContentLoaded",function(){new Glider(document.querySelector(".glider"),{slidesToShow:1,dots:".dots",draggable:!0,scrollLock:!0,rewind:!0,arrows:{prev:".glider-prev",next:".glider-next"}})});
