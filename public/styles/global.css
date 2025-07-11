@@ -37,3 +37,28 @@ nav a.nav-link.active {
   width: 100%;
   border-radius: 8px;
 }
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.index-pointer-title{
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.home-page-desc .desc-content{
+  flex: 1 1 auto;
+  width: 50%;
+}
+.desc-content img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
