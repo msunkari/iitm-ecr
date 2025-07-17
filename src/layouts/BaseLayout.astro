@@ -12,16 +12,17 @@ const base = import.meta.env.BASE_URL;
     <link rel="stylesheet" href={`${base}styles/glider.min.css`}>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-bg-color">
       <div class="container-fluid">
-        <a class="navbar-brand" href={`${base}`}><img src={`${base}images/ecr-logo.jpeg`} alt="IITM Logo" height="50"></a>
+        <a class="navbar-brand" href={`${base}`}><img src={`${base}images/ecr-logo.jpeg`} alt="IITM Logo" height="100"></a>
+        <a class="navbar-brand iitm-logo" href={`${base}`}><img src={`${base}images/iitmlogo.png`} alt="IITM Logo" height="80"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href={`${base}`}>Home</a></li>
-            <li class="nav-item"><a class="nav-link" href={`${base}getInvolved`}>Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="#get-involved">Get Involved</a></li>
             <li class="nav-item"><a class="nav-link" href={`${base}newsLetters`}>New Letters</a></li>
             <li class="nav-item"><a class="nav-link" href={`${base}events`}>Events</a></li>
             <li class="nav-item"><a class="nav-link" href={`${base}oppurtunities`}>Opputunities</a></li>
@@ -29,15 +30,14 @@ const base = import.meta.env.BASE_URL;
             <li class="nav-item"><a class="nav-link" href={`${base}contact`}>Contact</a></li>
           </ul>
         </div>
-        <a class="navbar-brand" href={`${base}`}><img src={`${base}images/iitmlogo.png`} alt="IITM Logo" height="50"></a>
       </div>
     </nav>
     
-    <main class="container mt-4">
+    <main class="container margin-top-120">
       <slot />
     </main>
     
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="navbar-bg-color text-white text-center py-3">
       <div class="container">
         <small>&copy; 2025 IITM. All rights reserved.</small>
       </div>
