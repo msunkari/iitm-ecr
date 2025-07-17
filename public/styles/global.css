@@ -15,9 +15,7 @@ body {
 main.container {
   flex: 1;
   position: relative;
-  margin-bottom: 60px;
   margin-top: 120px;
-  /* prevent footer overlap */
 }
 
 
@@ -47,11 +45,19 @@ h4 {
 
 footer {
   font-size: 0.9rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  z-index: 1000;
+  height: 200px;
+}
+.footer-note{
+  width: 40%;
+}
+.footer-section{
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+}
+.footer-mail-section{
+  color: #f2b30d;
 }
 
 nav a.nav-link.active {
@@ -92,7 +98,7 @@ nav a.nav-link.active {
 .navbar-nav {
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   width: 100%;
 }
 
@@ -104,6 +110,12 @@ nav a.nav-link.active {
   margin-bottom: 0;
   font-size: 18px;
   font-weight: 700;
+}
+.index-subtext {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f2b30d;
 }
 
 .home-page-desc .desc-content {
@@ -128,6 +140,7 @@ nav a.nav-link.active {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-top: 15px;
 }
 
 
